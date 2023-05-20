@@ -1,5 +1,5 @@
 import psycopg2
-#added a comment
+#added a new comment
 # Create a connection
 conn = psycopg2.connect(
     host="redshift-cluster.czmy70xfxylc.us-east-1.redshift.amazonaws.com",
