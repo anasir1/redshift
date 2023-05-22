@@ -2,7 +2,7 @@ import psycopg2
 #added a new comment
 # Create a connection
 conn = psycopg2.connect(
-    host="redshift-cluster.czmy70xfxylc.us-east-1.redshift.amazonaws.com",
+    host="redshift-cluster.cr3lw4pc0jrj.us-east-2.redshift.amazonaws.com",
     port="5439",
     dbname="dbdev",
     user="useradmin",
