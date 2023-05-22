@@ -1,0 +1,22 @@
+name: Python Workflow
+
+on:
+  push:
+    branches:
+      - master  # Replace with your branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8  # Replace with the desired Python version
+    - name: execute py script # run the run.py to get the latest data
+      run: |
+        python table.py
