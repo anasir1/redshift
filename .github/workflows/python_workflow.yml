@@ -16,7 +16,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8  # Replace with the desired Python version
-    - name: execute py script # run the run.py to get the latest data
+        python-version: 3.x  # Replace with the desired Python version
+        
+    - name: Install dependencies
       run: |
-        python table.py
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # Replace with your requirements file name
+        
+    - name: Run Python script
+      run: python table.py  # Replace with your Python script name
