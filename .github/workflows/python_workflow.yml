@@ -1,9 +1,8 @@
 name: Python Workflow
 
 on:
-  push:
-    branches:
-      - master  # Replace with your branch name
+  schedule:
+    - cron: "0 0 * * *"  # Runs every day at midnight UTC
 
 jobs:
   build:
